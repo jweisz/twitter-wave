@@ -152,7 +152,7 @@ function monitorTwitter() {
                 while (TWEETS.length >= MAX_TWEETS) {
                     TWEETS.shift();
                 }
-                TWEETS.push(cleanTweet);
+                TWEETS.push(tweet);
             }
         });
         
@@ -175,7 +175,7 @@ function shineFromTweetSentiment() {
     if (TWEETS.length > 5) {
         var text = TWEETS.join(' ');
         console.log("Analyzing tone of " + TWEETS.length + " tweets");
-        tj.analyzeTone(text, function(tone) {
+        tj.analyzeTone(text).then(function(tone) {
             tone.document_tone.tone_categories.forEach(function(category) {
                 if (category.category_id == "emotion_tone") {
                     // find the emotion with the highest confidence
