@@ -1,6 +1,6 @@
 // User-specific configuration
 exports.owner_name = "human";                  // change this to your own name for better personalization  :)
-exports.sentiment_keyword = "people";          // keyword to monitor in Twitter
+exports.sentiment_keyword = "education";       // keyword to monitor in Twitter
 exports.speak_intro = true;                    // speak the intro when the script is launched
 exports.speak_on_sentiment_change = true;      // if true, TJ will speak when the sentiment changes
 exports.wave_on_sentiment_change = true;       // if true, TJ will wave when the sentiment changes
