@@ -4,7 +4,8 @@
   "description": "Enhanced Twitter recipe for TJBot",
   "main": "twitter_wave.js",
   "dependencies": {
-    "tjbot": "^1.2.0"
+    "tjbot": "^1.2.0",
+    "twitter": "^1.7.0"
   },
   "devDependencies": {},
   "scripts": {
