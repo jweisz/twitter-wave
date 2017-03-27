@@ -1,0 +1,26 @@
+{
+  "name": "twitter-wave",
+  "version": "1.0.0",
+  "description": "Enhanced Twitter recipe for TJBot",
+  "main": "twitter_wave.js",
+  "dependencies": {
+    "tjbot": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jweisz/twitter-wave.git"
+  },
+  "keywords": [
+    "TJBot"
+  ],
+  "author": "Justin Weisz <jweisz@us.ibm.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jweisz/twitter-wave/issues"
+  },
+  "homepage": "https://github.com/jweisz/twitter-wave#readme"
+}
