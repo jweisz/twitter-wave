@@ -33,12 +33,14 @@ var SENTIMENT_ANALYSIS_FREQUENCY_MSEC = config.sentiment_analysis_frequency_sec 
 var hardware = ['led', 'servo', 'speaker'];
 
 // turn on debug logging to the console
-var config = {
-    verboseLogging: true
+var tjConfig = {
+    log: {
+        level: 'info'
+    }
 };
 
 // instantiate our TJBot!
-var tj = new TJBot(hardware, config, credentials);
+var tj = new TJBot(hardware, tjConfig, credentials);
 
 // create the twitter service
 var twitter = new Twitter({
@@ -241,7 +243,7 @@ function shineForEmotion(emotion) {
             tj.wave();
         }
         if (SPEAK_ON_SENTIMENT_CHANGE) {
-            tj.speakAsync("Hey " + OWNER_NAME + ", " + msg);
+            tj.speak("Hey " + OWNER_NAME + ", " + msg);
         }
     }
     
