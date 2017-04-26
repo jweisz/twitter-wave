@@ -9,7 +9,7 @@ This recipe requires a TJBot with an LED, a servo, and a speaker.
 ## Build and Run
 Install the dependencies.
 
-    $ cd twitter_wave
+    $ cd twitter-wave
     $ npm install
 
 Create an instance of the [Watson Tone Analyzer](http://www.ibm.com/watson/developercloud/tone-analyzer.html) service and note the authentication credentials.
@@ -24,7 +24,7 @@ Make a copy the default configuration file and update it with the Watson service
 
 Run!
 
-    sudo node twitter_wave.js
+    sudo node twitter-wave.js
 
 > Note the `sudo` command. Root user access is required to run TJBot recipes.
 
